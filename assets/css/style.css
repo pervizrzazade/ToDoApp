@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-color: rgb(126, 0, 245);
+}
+
+.container{
+    background-color: #fff;
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.container__top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container__top .title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #c300ff;
+}
+
+.container__top hr{
+    width: 100%;
+    color: #c300ff71;
+    margin: 20px 0;
+}
+.container__top .new__task__title{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #0004ff;
+}
+
+.container__top input{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #0004ff;
+    margin: 10px auto ;
+    outline: none;
+}
+.container__top input.add-btn{
+    font-weight: 600;
+    color: #0004ff;
+    cursor: pointer;
+}
+.container__top input.add-btn:hover{
+    color: #ffffff;
+    background-color: #0004ff
+}
+.list__section > ul > li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    border: 1px solid #474747;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow-x: auto;
+}
+
+.list__section > ul > li:hover{
+    background-color: #47474738;
+}
+.list__item--active{
+    background-color: #47474738;
+
+}
+.list__section >ul > li p{
+    font-size: 25px;
+    color: #474747;
+    
+}
+
+.list__section > ul > li> i{
+    font-size: 30px;
+    cursor: pointer;
+    color: #474747;
+    transition: all .3s;
+}
+
+.list__section > ul > li> .fa-trash-alt:hover{
+    color: #ff0000;
+}
+.list__section > ul > li> .fa-pen:hover{
+    color: #ff9900;
+}
